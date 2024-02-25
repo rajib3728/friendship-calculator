@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <title>Friendship Calculator </title>
+    <style>
+  body {
+  background-image: url('background_image.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.container1
+{
+    
+    background-color: rgb(131, 20, 234);
+    width: 100%;
+    height: 15%;
+  padding-top: 10px;
+    
+    margin-top: 0px;
+
+}
+.container
+{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+.btn1
+{
+    background-color: rgb(131, 20, 234);
+    padding: 10px;
+    border-radius: 15px;
+    color:white;
+    cursor: pointer;
+}
+.btn1:hover
+{
+    background-color: rgb(176, 137, 213);
+}
+</style>
+</head>
+<body>
+    <center>
+        <div class="container">
+    
+        <h1 style="padding-bottom:25px ;color: white;font-size: 40px; font-family: Fira Sans, PT Sans, Calibri, Tahoma, sans-serif;background-color:rgb(131, 20, 234);border-top-left-radius: 20px ;border-top-right-radius: 20px;padding-top: 15px;">Friendship Calculator </h1>
+        
+        <h2>Your Details</h2>
+        <label>Enter Name</label>
+        <input type="text" required id="inp1" placeholder="only first name">
+        <br>
+        <br>
+       <label>Enter Age</label>
+       <input type="number" required id="inp2">
+       <br>
+       <br>
+       <label>Enter Gender</label>
+       <input type="radio" value="male" name="gender1" id="inp3" >
+       <label for="male">male</label>
+       <input type="radio" value="female" name="gender1" id="inp4">
+       <label for="female">female</label>
+       <hr>
+       <h2>Your Friend Details</h2>
+       <label>Enter Name</label>
+       <input type="text" id="inp5"  placeholder="only first name">
+       <br>
+       <br>
+      <label>Enter Age</label>
+      <input type="number" id="inp6">
+      <br>
+      <br>
+      <label>Enter Gender</label>
+      <input type="radio" value="male" name="gender2" id="inp7" >
+      <label for="male">male</label>
+      <input type="radio" value="female" name="gender2" id="inp8" >
+      <label for="female">female</label>
+      <br>
+      <br>
+     <button class="btn1" onclick="fun1()">Submit</button>
+     <button class="btn1" onclick="fun4()" disabled id="inp10">Match music</button>
+     <br>
+      <br>
+    
+</div>
+<p id="inp9"></p>
+</center>
+    <script src="scripts.js"></script>
+</body>
+</html>
